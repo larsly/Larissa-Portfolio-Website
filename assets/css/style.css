@@ -261,4 +261,13 @@ footer h2 {
     nav {
       flex-direction: column;
     }
+    .cards {
+        width: 100%;
+      }
   }
+
+  @media screen and (max-width: 992px){
+    .cards {
+      width: 50%;
+    }
+    }
