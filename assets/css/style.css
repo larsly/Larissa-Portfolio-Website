@@ -1,7 +1,7 @@
 :root {
     --main-text-color: white;
     --secondary-color: rgb(18, 24, 40);
-    --focus-color: rgb(74, 10, 104);
+    --focus-color: rgb(108, 134, 162);
 }
 
 * {
@@ -12,20 +12,22 @@
 
 body {
     background-color: var(--secondary-color);
+    color: white;
 }
 
 .header {
     width: 100%;
     padding: 5px;
     display: flex;
-    position: fixed;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(189, 189, 189);
-    border-radius: 50px;
+    background-color: black;
 }
 
-
+.header h1 {
+    color: var(--focus-color);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 
 .navigate a {
     font-size: 20px;
@@ -33,7 +35,7 @@ body {
     text-decoration: none;
     font-weight: 500;
     margin: 35px;
-    color: var(--secondary-color);
+    color: var(--focus-color);
     transition: 1s;
 }
 
@@ -50,7 +52,7 @@ body {
 
 .greeting article {
     margin-left: 100px;
-    background-color: rgba(155, 66, 215, 0.617);
+    /* background-color: rgb(189, 189, 189); */
     width: 100vh;
     padding-left: 15%;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -65,7 +67,7 @@ body {
 .greeting h2 {
     font-size: 25px;
     font-weight: 500;
-    color: var(--secondary-color);
+    color: var(--focus-color);
     text-decoration: underline;
 }
 
@@ -104,34 +106,143 @@ body {
     font-size: 36px;
 }
 
-.content header {
-    font-size: 30px;
+.about {
+    position: relative;
+    padding-top: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 250px;
+    margin-bottom: 250px;
+}
+
+.about h1 {
+    font-size: 200%;
+    position: absolute;
+    top: -20px;
+    left: -220px;
+}
+
+.about p {
+    padding-left: 10px;
+    padding-right: 160px;
+    border-left: 5px solid black;
+    font-size: 100%;
     text-align: center;
 }
 
-.content article {
-    margin-bottom: 20px;
-    padding: 20px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #131212;
-    color: #ffffff;
+.work-content {
+    position: relative;
+    padding-top: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 250px;
+    margin-bottom: 250px;
 }
 
-.card {
-    border-style: solid;
-    border-width: 1px;
-    padding: 10px;
-    width: 25%;
+.work-content h1 {
+    font-size: 200%;
+    position: absolute;
+    top: -20px;
+    left: -220px;
 }
 
-.card img {
-    width: 100%;
-}
-
-p {
+.cards {
+    padding-left: 10px;
+    padding-right: 80px;
+    border-left: 5px solid black;
     font-size: 20px;
+    align-items: center;
+    
+}
+
+.top-card {
+    height: 700px;
+    width: 1400px;
+    margin: 50px;
+    position: relative;
+}
+
+.top-card img {
+    height: 700px;
+    width: 1400px;
+    padding: 25px;
+    background-color: white;
+    transition: 1s;
+}
+
+.top-card img:hover {
+    box-shadow: 1px 1px 30px white,
+                1px 1px 50px white;
+
+}
+
+.top-card h3 {
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    font-size: 150%;
+    bottom: 25px;
+    left: 2px;
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+}
+
+.small {
+    height: 350px;
+    width: 650px;
+    margin: 50px;
+    display:inline-block;
+    position: relative;
+}
+
+.small h3 {
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    font-size: 150%;
+    bottom: 25px;
+    left: 2px;
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+}
+
+.small img {
+    height: 350px;
+    width: 650px;
+    padding: 25px;
+    background-color: white;
+    transition: 1s;
+}
+
+.small img:hover {
+    box-shadow: 1px 1px 30px white,
+                1px 1px 50px white;
+
+}
+
+.contact {
+    position: relative;
+    padding-top: 5px;
+    display: flex;
+    align-items: center;
+    margin-left: 250px;
+    margin-bottom: 250px;
+}
+
+.contact h1 {
+    font-size: 150%;
+    position: absolute;
+    top: -20px;
+    left: -220px;
+}
+
+.contact a {
+    border-left: 5px solid black;
+    display: block;
+    color: white;
     text-align: center;
+    padding: 20px;
+    font-size: 50%;
 }
 
 footer {
