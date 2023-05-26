@@ -177,7 +177,7 @@ body {
                 1px 1px 50px white;
 
 }
-
+/* the name tags move if the screen changes size and unsure why? */
 .top-card h3 {
     background-color: rgb(255, 255, 255);
     position: absolute;
@@ -236,6 +236,7 @@ body {
     left: -220px;
 }
 
+/* different sizes? unsure why */
 .contact a {
     border-left: 5px solid black;
     display: block;
