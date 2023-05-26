@@ -12,9 +12,9 @@
 
 body {
     background-color: var(--secondary-color);
-    color: white;
+    color: var(--main-text-color);
 }
-
+/* header */
 .header {
     width: 100%;
     padding: 5px;
@@ -40,9 +40,9 @@ body {
 }
 
 .navigate a:hover {
-    color: white;
+    color: var(--main-text-color);
 }
-
+/* home */
 .greeting {
     display: flex;
     align-items: center;
@@ -52,7 +52,6 @@ body {
 
 .greeting article {
     margin-left: 100px;
-    /* background-color: rgb(189, 189, 189); */
     width: 100vh;
     padding-left: 15%;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -97,15 +96,16 @@ body {
                 1px 1px 50px white;
 
 }
-
+/* main */
 .content {
     width: 100%;
     display: inline-block;
     margin-bottom: 50px;
     margin-top: 50px;
     font-size: 36px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-
+/* about me section */
 .about {
     position: relative;
     padding-top: 5px;
@@ -119,18 +119,18 @@ body {
 .about h1 {
     font-size: 200%;
     position: absolute;
-    top: -20px;
+    top: -10px;
     left: -220px;
 }
 
 .about p {
-    padding-left: 10px;
+    padding-left: 30px;
     padding-right: 160px;
     border-left: 5px solid black;
-    font-size: 100%;
+    font-size: 70%;
     text-align: center;
 }
-
+/* work content */
 .work-content {
     position: relative;
     padding-top: 5px;
@@ -144,7 +144,7 @@ body {
 .work-content h1 {
     font-size: 200%;
     position: absolute;
-    top: -20px;
+    top: -10px;
     left: -220px;
 }
 
@@ -156,19 +156,20 @@ body {
     align-items: center;
     
 }
-
+/* first image */
 .top-card {
     height: 700px;
     width: 1400px;
     margin: 50px;
+    display:inline-block;
     position: relative;
 }
 
 .top-card img {
     height: 700px;
     width: 1400px;
-    padding: 25px;
-    background-color: white;
+    padding: 10px;
+    background-color: var(--main-text-color);
     transition: 1s;
 }
 
@@ -177,17 +178,17 @@ body {
                 1px 1px 50px white;
 
 }
-/* the name tags move if the screen changes size and unsure why? */
+
 .top-card h3 {
-    background-color: rgb(255, 255, 255);
+    background-color: var(--main-text-color);
     position: absolute;
     font-size: 150%;
-    bottom: 25px;
+    bottom: 45px;
     left: 2px;
     color: rgb(0, 0, 0);
     border-radius: 10px;
 }
-
+/* smaller images */
 .small {
     height: 350px;
     width: 650px;
@@ -197,7 +198,7 @@ body {
 }
 
 .small h3 {
-    background-color: rgb(255, 255, 255);
+    background-color: var(--main-text-color);
     position: absolute;
     font-size: 150%;
     bottom: 25px;
@@ -209,8 +210,8 @@ body {
 .small img {
     height: 350px;
     width: 650px;
-    padding: 25px;
-    background-color: white;
+    padding: 10px;
+    background-color: var(--main-text-color);
     transition: 1s;
 }
 
@@ -219,7 +220,7 @@ body {
                 1px 1px 50px white;
 
 }
-
+/* contact info */
 .contact {
     position: relative;
     padding-top: 5px;
@@ -232,31 +233,30 @@ body {
 .contact h1 {
     font-size: 150%;
     position: absolute;
-    top: -20px;
     left: -220px;
 }
 
-/* different sizes? unsure why */
 .contact a {
     border-left: 5px solid black;
     display: block;
-    color: white;
+    color: var(--main-text-color);
     text-align: center;
     padding: 20px;
     font-size: 50%;
 }
-
+/* footer */
 footer {
-    padding: 30px;
+    padding: 10px;
     clear: both;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
+    background-color: black;
 }
 
 footer h2 {
     font-size: 20px;
 }
-
+/* screen sizing */
 @media screen and (max-width: 768px) {
     main,
     nav {
@@ -266,9 +266,3 @@ footer h2 {
         width: 100%;
       }
   }
-
-  @media screen and (max-width: 992px){
-    .cards {
-      width: 50%;
-    }
-    }
