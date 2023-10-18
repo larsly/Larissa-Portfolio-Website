@@ -2,7 +2,7 @@
 
 ## Description
 
-A portfolio website for Larissa Bierly. In the header it includes my name at the top left and four links at the top right which lead you to other sections of the page. The body of the website includes a profile image at the top then three sections and a footer. The links at the top jump to their associated section. The work section has two functioning links attached to their corresponding pictures. This website is ADA accesible with alt attributes for images.  
+A portfolio website for Larissa Bierly. In the header it includes my name at the top left and four links at the top right which lead you to other sections of the page. The body of the website includes a profile image at the top then three sections and a footer. The links at the top jump to their associated section. The work section has two functioning links attached to their corresponding pictures. This website is ADA accesible with alt attributes for images. Thank you!
 
 ### Skills Used
 
